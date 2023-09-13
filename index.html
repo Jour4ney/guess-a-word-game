@@ -6,9 +6,20 @@
     <title>Guess a word game</title>
 </head>
 <body>
-  <div></div> 
-  <h1></h1> 
-  <div></div>
+  <div class="wrapper"> 
+  <h1> Guess the word</h1> 
+  <div class="content">
   <input type="text" class="typing-input" maxlength="1" >
+  <div class="answer"></div>
+  <div class="details">
+  <p class="hint">Hint:<span></span></p>
+  <p class="guess-left">Guesses left:<span></span></p>
+  <p class="wrong-word">wrong answer:<span></span></p>
+  </div>
+  <button class="reset-btn">Reset Game</button>
+  </div>
+  </div>
+  <script src="js/words.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
