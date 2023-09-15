@@ -22,7 +22,7 @@ body {
     max-width: 80%;
     background: #fff;
     box-shadow: 0 0 5px 4px;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +39,12 @@ body {
 .wrapper .content {
     margin: 25px 25px 35px;
     
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 /* styling for user score area*/
 .score {
