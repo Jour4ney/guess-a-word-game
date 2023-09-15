@@ -11,20 +11,18 @@
 <body>
     <!-- main container with user-score, question area and controls-->
   <div class="wrapper"> 
-  <h1> Guess the word</h1> 
+  <h1> Science Basic Words</h1> 
   <div class="score">
     <span id="user-score">0</span>
     <span id="total-score">/25</span>
   </div>
-    <div class="inputs">
-  <div class="details">
+   
     <div class="content" id="question-area">
-      <div id="question-text"></div>
-  <p class="hint">Hint:<span></span></p>
-  <p class="guess-left">Guesses left:<span></span></p>
-  <p class="wrong-word">Wrong Answer:<span></span></p>
+      <div id="question-text">Question text</div>
+      <div class="options">
+      <button class="btn btn-option" id="True">True</button>
+  <button class="btn btn-option" id="False">False</button>
   </div>
-</div>
 </div>
 
   <div class="controls">
@@ -34,6 +32,7 @@
   <button class="btn btn-submit" id="submit">Submit</button>
   </div>
   </div>
+  
   <script src="js/words.js"></script>
   <script src="js/script.js"></script>
 </body>
