@@ -106,3 +106,10 @@ margin-left: 0px;
     color: black;
     padding: 15px;
 }
+.controls{
+    padding: 10px;
+    order: 4;
+}
+.hide{
+   display:none ;
+}
