@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A game for learners to test their general science knowledge by guessing the word.">
+    <meta name="keywords" content="game, knowledge, general science knowledge, test, everything">
     <title>Guess a word game</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!--code from youtube.com/codingnepal-->
 <body>
-    <!-- main section contains words that are to be guessed-->
+    <!-- main container with user-score, question area and controls-->
   <div class="wrapper"> 
   <h1> Guess the word</h1> 
-  <div class="content">
-    <input type="text" class="typing-input" maxlength="1">
-    <div class="inputs"></div>
+  <div class="score">
+    <span id="user-score">0</span>
+    <span id="total-score">/25</span>
+  </div>
+    <div class="inputs">
   <div class="details">
+    <div class="content" id="question-area">
+      <div id="question-text"></div>
   <p class="hint">Hint:<span></span></p>
   <p class="guess-left">Guesses left:<span></span></p>
   <p class="wrong-word">Wrong Answer:<span></span></p>
   </div>
-  <button class="reset-btn">Reset Game</button>
+</div>
+</div>
+
+  <div class="controls">
+  <button class="btn btn-reset" id="reset">Reset game</button>
+  <button class="btn btn-prev" id="prev">Prev</button>
+  <button class="btn btn-next" id="next">Next</button>
+  <button class="btn btn-submit" id="submit">Submit</button>
   </div>
   </div>
   <script src="js/words.js"></script>
