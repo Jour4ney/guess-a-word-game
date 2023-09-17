@@ -190,6 +190,40 @@ let questions = [
 ]
 // code that calls respective functions when a button is clicked,(on click events)//
 resetBtn.addEventListener('click',reset);
-prevBtn.addEventListener('click',prv);
+prevBtn.addEventListener('click',prev);
 nextBtn.addEventListener('click',next);
 submitBtn.addEventListener('click',submit);
+// function that executes when the page loads and script gets executed and jump to the next question once the option is selected//
+function beginQuiz(){
+    currentQuestion = 0;
+    questionText.innerHTML =questions[currentQuestion].question;
+    trueBtn.innerHTML =questions[currentQuestion].answer[0].option;
+    trueBtn.onclick = () => {
+        let ano = 0;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<25){
+                score++;
+            }
+
+        }
+        userScore.innerHTML = score;
+        if(currentQuestion<24){
+            next();
+        }
+    }
+    falseBtn.innerHTML = questions[currentQuestion].answer[1].option;
+    falseBtn.onclick = () => {
+        let ano =1;
+        if(questions[currentQuestion].answers[ano].answer){
+            if(score<25){
+                score++;
+            }
+    }
+}
+  userScore.innerHTML = score;
+  if(currentQuestion<24){
+    next();
+  }
+}
+prevBtn.classList.add('hide');
+beginQuiz();
