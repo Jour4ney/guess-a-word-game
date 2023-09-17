@@ -189,3 +189,7 @@ let questions = [
     },
 ]
 // code that calls respective functions when a button is clicked,(on click events)//
+resetBtn.addEventListener('click',reset);
+prevBtn.addEventListener('click',prv);
+nextBtn.addEventListener('click',next);
+submitBtn.addEventListener('click',submit);
