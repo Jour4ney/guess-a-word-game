@@ -227,3 +227,29 @@ function beginQuiz(){
 }
 prevBtn.classList.add('hide');
 beginQuiz();
+//function that will jump to the previous question and decrement the current question and remove the hidden class//
+function prev(){
+    currentQuestion--;
+    if(currentQuestion<=0){
+        prevBtn.classList.add('hide');
+        nextBtn.classList.remove('hide');
+    }
+    questionText.innerHTML =questions[currentQuestion].question;
+    trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
+    trueBtn.onclick =() =>{
+        let ano=0;
+        if(questions[currentQuestion].answer[ano].answer){
+            if(score<25){
+                score++;
+            }
+        }
+        userScore.innerHTML= score;
+        if(currentQuestion<24){
+            next();
+        }
+    }
+    falseBtn.innerHTML =questions[currentQuestion].answers[1].option;
+falseBtn.onclick = () => {
+    let ano=1;
+}
+}
