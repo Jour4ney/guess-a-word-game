@@ -1,39 +1,45 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+[Science Knowledge Quiz](https:) was developed for middle school learners to help them build their confidence with general science questions.
+This game consists of 25 questions, it seeks to build confidence therefore no timer. Therefore the player can choose to answer all the questions and restart the game until they get all the question right or they can play and reset at their own pace and choice.
 
-Welcome,
+![Responsive Mockup]()
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Table of Contents
++ [UX](#ux "UX")
+  + [User Demographic](#user-demographic "User Demographic")
+  + [Design](#design "Design")
+  + [Typography](#typography "Typography")
++ [Flowchart](#flowchart "Flowchart")
++ [Features](#features "Features")
+  + [Header](#header "Header")
+  + [How to play](#how-to-player "How to play")
+  + [Game Over screen](#game-over-screen "Game Over screen")
+  + [Footer](#footer "Footer")
+  + [Future Features](#future-features "Future Features")
++ [Deployment](#deployment "Deployment")
+  + [GitHub Pages](#github-pages "GitHub Pages")
++ [Testing](#Testing "Testing")
+  + [General Testing](#general-testing "General Testing")
+  + [Validator Testing](#validator-testing "Validator Testing")
+  + [Bugs Encountered](#bugs-encountered "Bugs Encountered")
++ [Credits](#credits "Credits")
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# UX
 
-## Codeanywhere Reminders
+## User Demographic
+This website was designed to:
+  - Provide a simple browser quiz for those wanting to test their science knowledge.
+  - Allow returning users to practice at their own pace or even time themselves.
+  - Be quick and accesible enough to be played during a study break or even in class as a learning or teaching tool.
+ 
+## Design
+- The game revolves around remembering science facts and knowledge. Therefore and orange background is used.
+![Science Basic Knowledge Design](assets/)
+- Colour orange is associated with playfulness, excitement and positivity, which is what the game seeks to do learning in a playful way and encouraging positivity in STEM.
+- Buttons are also styled with the same color as the background with a white border to keep it simple and consistent.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Typography
+- the font used for this site is from google fonts "Roboto" as it is a simple and easy on the eye font which aligns with our target audience needs.
+# Features
 
-`python3 -m http.server`
+## Header
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
